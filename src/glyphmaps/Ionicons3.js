@@ -1,4 +1,4 @@
-const map = {
+export default {
   'ios-add': 61698,
   'ios-add-circle': 61697,
   'ios-add-circle-outline': 61696,
@@ -934,4 +934,3 @@ const map = {
   'md-wine': 62377,
   'md-woman': 62378
 };
-map;
