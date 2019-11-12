@@ -17,7 +17,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import Zocial from 'react-native-vector-icons/Zocial';
 import { createIconSet } from 'react-native-vector-icons';
 
-import customFontGlyph from '../../Fonts/Ionicons3.json';
+import customFontGlyph from '../glyphmaps/Ionicons3.js';
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 const Ionicons3 = createIconSet(customFontGlyph, 'Ionicons', 'Ionicons3.ttf');
