@@ -18,6 +18,14 @@ import Zocial from 'react-native-vector-icons/Zocial';
 
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
+import { createIconSet } from "react-native-vector-icons";
+import customFontGlyph from "../../Fonts/Ionicons3.json";
+let Ionicons3 = createIconSet(
+  customFontGlyph,
+  "Ionicons",
+  "Ionicons3.ttf",
+);
+
 class IconNB extends Component {
   static contextTypes = {
     theme: PropTypes.object
@@ -65,6 +73,9 @@ class IconNB extends Component {
         break;
       case 'Ionicons':
         this.Icon = Ionicons;
+        break;
+      case 'Ionicons3':
+        this.Icon = Ionicons3;
         break;
       case 'MaterialCommunityIcons':
         this.Icon = MaterialCommunityIcons;
