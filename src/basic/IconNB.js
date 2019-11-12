@@ -15,16 +15,12 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import Zocial from 'react-native-vector-icons/Zocial';
+import { createIconSet } from 'react-native-vector-icons';
 
+import customFontGlyph from '../../Fonts/Ionicons3.json';
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
-import { createIconSet } from "react-native-vector-icons";
-import customFontGlyph from "../../Fonts/Ionicons3.json";
-let Ionicons3 = createIconSet(
-  customFontGlyph,
-  "Ionicons",
-  "Ionicons3.ttf",
-);
+const Ionicons3 = createIconSet(customFontGlyph, 'Ionicons', 'Ionicons3.ttf');
 
 class IconNB extends Component {
   static contextTypes = {
@@ -112,6 +108,7 @@ IconNB.propTypes = {
     'FontAwesome5',
     'Foundation',
     'Ionicons',
+    'Ionicons3',
     'MaterialCommunityIcons',
     'MaterialIcons',
     'Octicons',
